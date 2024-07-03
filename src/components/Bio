@@ -1,0 +1,18 @@
+import React from 'react';
+
+interface BioProps {
+    name: string;
+    description: string;
+}
+
+const Bio: React.FC<BioProps> = ({ name, description }) => {
+    return (
+        <section>
+            <h2>About {name}</h2>
+            <p>{description}</p>
+        </section>
+    );
+}
+
+export default Bio;
+
